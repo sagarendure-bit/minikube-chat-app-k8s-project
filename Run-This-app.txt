@@ -1,0 +1,12 @@
+Run Minikube app
+
+Minikube start
+
+kubectl apply -f k8s/
+
+Kubectl get ns
+kubectl get pods -n chat-app
+
+kubectl port-forward -n chat-app service/frontend 8080:80
+
+kubectl delete namespacechat-app
